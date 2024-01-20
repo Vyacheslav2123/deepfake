@@ -845,8 +845,103 @@ a, li {
     width: 240px;
     text-align: center;
   }
+  .referal > .invite-link {
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+    margin-top: -30px;
+  }
 }
-@media (max-width: 600px) {
+@media (max-width: 520px) {
+  .woman__link > hr, .woman__link-desc {
+    display: none;
+  }
+  .how_does_works__title, .this {
+    font-size: 30px;
+  }
+  .how_does_works h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .how_does_works__container {
+    margin-top: 50px;
+    gap: 80px;
+  }
+  .how_does_works__block {
+    height: 300px;
+  }
+  .how_does_works__block-up {
+    gap: 55px;
+  }
+  .how_does_works__block-down {
+    padding: 32px 36px;
+    padding-top: 7px;
+  }
+  .how_does_works__block-up--title {
+    line-height: 100%;
+    font-size: 28px;
+    margin-top: 50px;
+  }
+  .how_does_works__block-up--number {
+    font-size: 36px;
+    margin-left: 25px;
+    margin-top: 50px;
+  }
+  .how_does_works__block-down--desc {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .tarif__card {
+    width: 95%;
+  }
+  .arrow__right, .arrow__left {
+    display: none;
+  }
+  .tarif__title {
+    font-size: 30px;
+  }
+  .tarif__desc {
+    text-align: center;
+    font-size: 22px;
+  }
+  .tarif__wrapper {
+    padding-top: 10px;
+  }
+  .faq {
+    padding-top: 20px;
+    height: initial;
+    padding-bottom: 90px;
+  }
+  .faq__title {
+    font-size: 30px;
+  }
+  .faq__desc {
+    font-size: 22px;
+    text-align: center;
+  }
+  .faq__question {
+    font-size: 26px;
+  }
+  .faq__question > svg {
+    width: 20px;
+    height: 20px;
+  }
+  .referal__section {
+    background-size: 550%;
+  }
+  .referal, .join {
+    padding: 30px 20px;
+  }
+  .invitings {
+    font-size: 12px;
+    width: 180px;
+    height: 32px;
+  }
+  .invite-link {
+    left: 90%;
+  }
+}
+@media (max-width: 380px) {
   .how_does_works__block {
     background: url(../img/mobfone.png) center no-repeat;
   }
@@ -863,10 +958,12 @@ a, li {
   }
   .how_does_works__block-up--number {
     font-size: 28px;
+    margin-top: 0;
   }
   .how_does_works__block-up--title {
     font-size: 18px;
     line-height: 100%;
+    margin-top: 0;
   }
   .how_does_works__block-down--desc {
     font-size: 10px;
@@ -925,6 +1022,7 @@ a, li {
   .arrow__left, .arrow__right {
     width: 30px;
     height: 30px;
+    display: flex;
   }
   .tarif__card {
     width: 258px;
@@ -1019,7 +1117,6 @@ a, li {
     font-size: 9px;
     margin-top: 10px;
   }
-  
   .how_does_works__title {
     font-size: 22px;
   }
@@ -1043,13 +1140,8 @@ a, li {
   .menu__btn {
     margin-right: 20px;
   }
-}
-@media screen and (max-width: 380px) {
   .header {
     padding: 32px 26px;
-  }
-  .woman__link > hr, .woman__link-desc {
-    display: none;
   }
   .woman__title {
     width: 100%;
