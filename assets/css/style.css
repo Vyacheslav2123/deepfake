@@ -513,6 +513,9 @@ a, li {
 .faq__answer {
   display: none;
 }
+.faq__answer-open {
+  display: flex;
+}
 @media (max-width: 1900px) {
   .header {
     padding: 40px 130px 0 130px;
@@ -1014,7 +1017,9 @@ a, li {
   }
   .faq__answer {
     font-size: 9px;
+    margin-top: 10px;
   }
+  
   .how_does_works__title {
     font-size: 22px;
   }
