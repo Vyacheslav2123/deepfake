@@ -39,5 +39,40 @@ questions.forEach(question => {
   });
 });
 
+const check2 = document.querySelector('.menu__box');
+  check2.addEventListener('click', event => {
+  menu__toggle.checked = false;
+});
+    $('a[href^="#how"]').click(function(){ // #1
+        let anchor = $(this).attr('href'); // #2
+        $('html, body').animate({ // #3
+        scrollTop: $(anchor).offset().top // #4
+        }, 600); // #5
+        });
+        $('a[href^="#faq"]').click(function(){ // #1
+        let anchor = $(this).attr('href'); // #2
+        $('html, body').animate({ // #3
+        scrollTop: $(anchor).offset().top // #4
+        }, 600); // #5
+        });
+        $('a[href^="#contact"]').click(function(){ // #1
+        let anchor = $(this).attr('href'); // #2
+        $('html, body').animate({ // #3
+        scrollTop: $(anchor).offset().top // #4
+        }, 600); // #5
+        });
+        $('a[href^="#referal"]').click(function(){ // #1
+          let anchor = $(this).attr('href'); // #2
+          $('html, body').animate({ // #3
+          scrollTop: $(anchor).offset().top // #4
+          }, 600); // #5
+          });
+          $('a[href^="#tarif"]').click(function(){ // #1
+            let anchor = $(this).attr('href'); // #2
+            $('html, body').animate({ // #3
+            scrollTop: $(anchor).offset().top // #4
+            }, 600); // #5
+            });
+
 
 

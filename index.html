@@ -7,8 +7,11 @@
     <title>BikiniOFF</title>
     <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+        crossorigin="anonymous">
+    </script>
 </head>
 <body>
     <div class="content">    
@@ -17,11 +20,11 @@
                 <a href="#" class="header__logo">
                 </a>
                 <ul class="header__nav">
-                    <li><a href="" class="nav-link">Как это работает?</a></li>
-                    <li><a href="" class="nav-link">Тарифы</a></li>
-                    <li><a href="" class="nav-link">FAQ</a></li>
-                    <li><a href="" class="nav-link">Контакты</a></li>
-                    <li><a href="" class="nav-link">Партнерство</a></li>
+                    <li><a href="#how" class="nav-link">Как это работает?</a></li>
+                    <li><a href="#tarif" class="nav-link">Тарифы</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    <li><a href="#referal" class="nav-link">Партнерство</a></li>
                 </ul>
                 <div class="header__support">
                     <a href="#" class="support-btn"><img src='./assets/img/header__tg.svg' /> Telegram</a>
@@ -33,11 +36,11 @@
                         <span></span>
                     </label>
                     <ul class="menu__box">
-                        <li><a href="#" class="menu__item">Как это работает?</a></li>
-                        <li><a href="#" class="menu__item">Тарифы</a></li>
-                        <li><a href="#" class="menu__item">FAQ</a></li>
-                        <li><a href="#" class="menu__item">Контакты</a></li>
-                        <li><a href="#" class="menu__item">Партнерство</a></li>
+                        <li><a href="#how" class="menu__item">Как это работает?</a></li>
+                        <li><a href="#tarif" class="menu__item">Тарифы</a></li>
+                        <li><a href="#faq" class="menu__item">FAQ</a></li>
+                        <li><a href="#contact" class="menu__item">Контакты</a></li>
+                        <li><a href="#referal" class="menu__item">Партнерство</a></li>
                     </ul>
                 </div>
             </header>
@@ -142,7 +145,7 @@
                 </div>
             </section>
         </div>
-        <section class="how_does_works">
+        <section class="how_does_works" id="how">
          <p class="how_does_works__title">КАК <span class='this'>ЭТО</span> РАБОТАЕТ?</p>
          <h4>
              Вы можете увидеть кого-нибудь голым. Просто закрасьте одежду, укажите возраст, телосложение и получайте готовый результат
@@ -210,7 +213,7 @@
             </div>
          </div>
         </section>
-        <section class='tarif'>
+        <section class='tarif' id="tarif">
             <p class="tarif__title">
                 ТАРИФНЫЙ ПЛАН
             </p>
@@ -300,7 +303,7 @@
             </svg>
             </div>
         </section>
-        <section class='faq'>
+        <section class='faq' id="faq">
             <p class="faq__title">
                 FAQ’s
             </p>
@@ -356,7 +359,7 @@
         </section>
         <section class="referal__section">
             <div class="referal__container">
-                <div class="referal">
+                <div class="referal" id="referal">
                     <div class="referal__content">
                         <p class='system'>РЕФЕРАЛЬНАЯ СИСТЕМА</p>
                         <p class='invited'>За каждого приглашенного Вами друга, вы получаете бесплатные кредиты, которые можно использовать для генрации изображения</p>
@@ -364,7 +367,7 @@
                     </div>
                     <button type='button' class="invite-link">Пригласить друга</button>
                 </div>
-                <div class="join">
+                <div class="join" id="contact">
                 <div class="referal__content">
                         <p class='system system2'>ПОДКЛЮЧАЙТЕСЬ К НАМ В TELEGRAM</p>
                         <p class='invited invited2'>Пишите нам о любом вопросе или проблеме и мы постараемся Вам помочь. Обратная связь важна нам, чтобы стать лучше</p>
@@ -387,10 +390,6 @@
                 </div>
             </ul>
         </footer>
-            
-        
-
-
     </div>
     <script src="./assets/js/script.js"></script>
 </body>
