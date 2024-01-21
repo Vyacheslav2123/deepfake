@@ -95,6 +95,48 @@ a, li {
   flex-direction: column;
   justify-content: flex-start;
 }
+.woman__edit {
+  width: 308px;
+  height: 383px;
+  border-radius: 90px 90px 40px 40px;
+  border: 2px solid #F66BFF;
+}
+.woman__orig {
+  width: 100%;
+  height: 100%;
+  border-radius: 90px 90px 40px 40px;
+  z-index: 1;
+  filter: blur(5px);
+}
+.woman__blur {
+  width: 304px;
+  height: calc(206px);
+  border-radius: 90px 90px 0 0;
+  margin-top: -383px;
+  z-index: 3;
+  position: sticky;
+}
+.woman__blur-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 90px 90px 0 0;
+  background: url(../img/woman.jpg);
+  background-size: cover;
+}
+.woman__line {
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  position: sticky;
+  width: 100%;
+  height: 4px;
+  background: #F66BFF;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.14);
+}
+.woman__line > svg {
+  margin-top: -7px;
+  cursor: pointer;
+}
 .woman__title {
   width: 370px;
   color: #F66BFF;
@@ -200,7 +242,7 @@ a, li {
 .how_does_works__block {
   width: 660px;
   height: 343px;
-  background: url(../img/fone.png) center no-repeat;
+  background: url(../img/fone.svg) center no-repeat;
 }
 .how_does_works__block-up {
   display: flex;
@@ -383,10 +425,16 @@ a, li {
 }
 .faq__arrow {
   transform: rotate(-90deg);
+  transition-duration: .3s;
 }
 .faq__answer {
   width: 100%;
-  margin-top: 35px;
+  height: 0;
+  display: flex;
+  align-items: end;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: .3s;
 }
 .referal__section {
   width: 100%;
@@ -510,11 +558,13 @@ a, li {
   gap: 19px;
   margin-left: 100px;
 }
-.faq__answer {
-  display: none;
+.rotate__svg > .faq__arrow {
+  transform: rotate(0deg);
 }
 .faq__answer-open {
-  display: flex;
+  height: 75px;
+  visibility: visible;
+  opacity: 1;
 }
 @media (max-width: 1900px) {
   .header {
@@ -941,9 +991,9 @@ a, li {
     left: 90%;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .how_does_works__block {
-    background: url(../img/mobfone.png) center no-repeat;
+    background: url(../img/mobfone.svg) center no-repeat;
   }
   .invite-link {
     width: 95px;
@@ -1074,13 +1124,16 @@ a, li {
   .faq__question {
     font-size: 18px;
   }
+  .faq__answer-open {
+    height: 40px;
+  }
   .faq__question > svg {
     width: 15px;
     height: 8px;
   }
   .faq__block {
-    padding-bottom: 25px;
-    margin-top: 25px;
+    padding-bottom: 15px;
+    margin-top: 15px;
   }
   .referal__container {
     justify-content: center;
@@ -1115,7 +1168,6 @@ a, li {
   }
   .faq__answer {
     font-size: 9px;
-    margin-top: 10px;
   }
   .how_does_works__title {
     font-size: 22px;
